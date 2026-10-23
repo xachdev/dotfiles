@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+for f in bashrc gitconfig nanorc tmux.conf; do
+    if [ "$(readlink -f "$HOME/.$f")" = "$HOME/dotfiles/$f" ]; then
+        echo "ok        .$f"
+    else:
+        echo "BROKEN    .$f"
+    fi
+done
