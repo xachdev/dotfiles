@@ -5,3 +5,9 @@
 	defaultBranch = main
 [core]
 	editor = nano
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	lg = log --oneline --graph --decorate -20
+	undo = reset --soft HEAD~1
