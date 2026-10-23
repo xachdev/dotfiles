@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+cd ~/dotfiles
+git add -A
+git diff --cached --quiet && { echo "Nothing to sync"; exit 0; }
+git commit -m "${1:-Update dotfiles}"
+git push
