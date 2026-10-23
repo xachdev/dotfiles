@@ -6,6 +6,7 @@ alias ll='ls -alFh'
 alias gs='git status'
 alias gl='git log --oneline --graph --decorate -20'
 alias gc='git commit'
+alias gp='git push'
 alias ..='cd ..'
 alias update='sudo apt update && sudo apt upgrade -y'
 
