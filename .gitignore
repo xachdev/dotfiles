@@ -1,0 +1,6 @@
+.ssh/
+*.pem
+*.key
+.env
+*.token
+.bash_history
