@@ -5,6 +5,7 @@
 	defaultBranch = main
 [core]
 	editor = nano
+	excludesfile = ~/.gitignore_global
 [alias]
 	st = status -sb
 	co = checkout

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-for f in bashrc gitconfig nanorc tmux.conf; do
+for f in bashrc gitconfig nanorc tmux.conf gitignore_global; do
     if [ "$(readlink -f "$HOME/.$f")" = "$HOME/dotfiles/$f" ]; then
         echo "ok        .$f"
     else:
