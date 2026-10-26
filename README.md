@@ -8,3 +8,5 @@ git clone git@github.com:xachdev/dotfiles.git ~/dotfiles
 The script backs up any existing .bashrc, .gitconfig, .nanorc, .tmux.conf, .gitignore_global and .vimrc, then symlinks the ones from this repo.
 
 Never commit `~/ssh`, tokens, or passwords.
+
+On a fresh machine, `~/dotfiles/bootstrap.sh` installs the packages.txt, then links everything.

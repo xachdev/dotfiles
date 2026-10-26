@@ -9,3 +9,7 @@ check:
 
 sync:
 > bin/dotsync "$(m)"
+
+.PHONY: bootstrap
+bootstrap:
+> ./bootstrap.sh
