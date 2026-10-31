@@ -13,3 +13,7 @@ sync:
 .PHONY: bootstrap
 bootstrap:
 > ./bootstrap.sh
+
+.PHONY: pull
+pull:
+> bin/dotpull
