@@ -33,3 +33,6 @@ ahopt -s checkwinsize
 # Colors
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+# Machine-specific settings (not tracked)
+[ -f ~/.bashrc.local ] && source ~/.bashrc.local
