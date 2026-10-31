@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e
+cd ~/dotfiles
+if [ -n "$(git status --porcelain)" ]; then
+    echo "Uncommited changes. Run dotsync first."
+    exit 1
+fi
+git pull --rebase
+./install.sh
+bin/dotcheck
