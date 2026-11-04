@@ -10,3 +10,5 @@ ufw
 tmux
 vim
 unattended-upgrades
+jq
+xz-utils

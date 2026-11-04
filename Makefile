@@ -17,3 +17,9 @@ bootstrap:
 .PHONY: pull
 pull:
 > bin/dotpull
+
+.PHONY: zig sublime
+zig:
+> tools/zig.sh
+sublime:
+> tools/sublime.sh
