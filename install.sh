@@ -7,3 +7,10 @@ for f in bashrc gitconfig nanorc tmux.conf gitgnore_global vimrc; do
 	ln -sf "$PWD/$f" "$HOME/.$f"
 	echo "linked .$f"
 done
+
+# Sublime Text settings
+SUBL="$HOME/.config/sublime-text/Packages/User"
+mkdir -p "$SUBL"
+for f in "Preferences.sublime-settings" "Package Control.sublime-settings"; do
+  ln -sf "$PWD/sublime/$f" "$SUBL/$f"
+done
