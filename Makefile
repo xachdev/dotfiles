@@ -23,3 +23,7 @@ zig:
 > bash tools/zig.sh
 sublime:
 > bash tools/sublime.sh
+
+.PHONY: sublime-zig
+sublime-zig:
+> bash tools/sublime-zig.sh

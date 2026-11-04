@@ -19,3 +19,4 @@ sudo apt install -y sublime-text
 echo "==> Symlinking dotfiles and Sublime settings..."
 ./install.shtools/sublime.sh
 tools/zig.sh
+bash tools/sublime-zig.sh
