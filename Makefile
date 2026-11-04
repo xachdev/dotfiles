@@ -20,6 +20,6 @@ pull:
 
 .PHONY: zig sublime
 zig:
-> tools/zig.sh
+> bash tools/zig.sh
 sublime:
-> tools/sublime.sh
+> bash tools/sublime.sh
