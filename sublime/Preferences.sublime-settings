@@ -2,6 +2,7 @@
 	"dark_theme": "Adaptive.sublime-theme",
 	"light_theme": "Adaptive.sublime-theme",
 	"theme": "Adaptive.sublime-theme",
+	"font_size"
 	"ignored_packages":
 	[
 		"Vintage",
