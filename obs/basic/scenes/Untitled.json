@@ -69,7 +69,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 9,
+                "id_counter": 10,
                 "custom_size": false,
                 "items": [
                     {
@@ -97,7 +97,7 @@
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.6867088079452515,
+                            "x": -1.6870369911193848,
                             "y": -1.0
                         },
                         "scale": {
