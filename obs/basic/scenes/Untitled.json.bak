@@ -64,33 +64,6 @@
         },
         {
             "prev_ver": 553648128,
-            "name": "Window Capture (Xcomposite)",
-            "uuid": "8a1677a9-6fc8-4b4d-9deb-4f194cae04f9",
-            "id": "xcomposite_input",
-            "versioned_id": "xcomposite_input",
-            "settings": {
-                "capture_window": "62914563\r\nuntitled • (stash) - Sublime Text (UNREGISTERED)\r\nsublime_text"
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "monitoring_enabled": false,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 553648128,
             "name": "Scene",
             "uuid": "966ccff6-bbaf-4efb-984b-fbdb81ac741e",
             "id": "scene",
@@ -124,7 +97,7 @@
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.6867088079452515,
+                            "x": -1.6870369911193848,
                             "y": -1.0
                         },
                         "scale": {
@@ -208,61 +181,6 @@
                             "duration": 300
                         },
                         "private_settings": {}
-                    },
-                    {
-                        "name": "Window Capture (Xcomposite)",
-                        "source_uuid": "8a1677a9-6fc8-4b4d-9deb-4f194cae04f9",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 10,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 300
-                        },
-                        "hide_transition": {
-                            "duration": 300
-                        },
-                        "private_settings": {}
                     }
                 ]
             },
@@ -282,9 +200,7 @@
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": [],
-                "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": []
+                "libobs.hide_scene_item.9": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
