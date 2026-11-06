@@ -14,3 +14,10 @@ mkdir -p "$SUBL"
 for f in "Preferences.sublime-settings" "Package Control.sublime-settings"; do
   ln -sf "$PWD/sublime/$f" "$SUBL/$f"
 done
+
+# OBS profiles and scenes
+t="$HOME/.config/obs-studio/basic"
+if [ -d "$PWD/obs/basic" ]; then
+mkdir -p "$HOME/.config/obs-studio"
+if [ -d "$t" ] && [ ! -L "$t" ]; then mv "$t" "$t.bak"; fi
+fi

@@ -27,3 +27,7 @@ sublime:
 .PHONY: sublime-zig
 sublime-zig:
 > bash tools/sublime-zig.sh
+
+.PHONY: mechvibes
+mechvibes:
+> bash tools/mechvibes.sh
