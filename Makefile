@@ -31,3 +31,7 @@ sublime-zig:
 .PHONY: mechvibes
 mechvibes:
 > bash tools/mechvibes.sh
+
+.PHONY: wallpaper
+wallpaper:
+> bash tools/wallpaper.sh

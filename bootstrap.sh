@@ -21,3 +21,4 @@ echo "==> Symlinking dotfiles and Sublime settings..."
 tools/zig.sh
 bash tools/sublime-zig.sh
 bash tools/mechvibes.sh
+bash tools/wallpaper.sh || true
