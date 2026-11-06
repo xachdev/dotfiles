@@ -12,3 +12,4 @@ vim
 unattended-upgrades
 jq
 xz-utils
+python3-tk
