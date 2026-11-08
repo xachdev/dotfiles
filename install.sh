@@ -21,3 +21,11 @@ if [ -d "$PWD/obs/basic" ]; then
 mkdir -p "$HOME/.config/obs-studio"
 if [ -d "$t" ] && [ ! -L "$t" ]; then mv "$t" "$t.bak"; fi
 fi
+
+# XFCE settings
+t="$HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
+if [ -d "$PWD/xfce" ]; then
+mkdir -p "$(dirname "$t")"
+if [ -d "$t" ] && [ ! -L "$t" ]; then mv "$t" "$t.bak"; fi
+ln -sfn "$PWD/xfce" "$t"
+fi
