@@ -39,3 +39,7 @@ wallpaper:
 .PHONY: lint
 lint:
 > shellcheck install.sh bootstrap.sh bin/* hooks/pre-commit tools/*.sh
+
+.PHONY: backup
+backup:
+> bash tools/backup.sh $(d)
