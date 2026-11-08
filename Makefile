@@ -35,3 +35,7 @@ mechvibes:
 .PHONY: wallpaper
 wallpaper:
 > bash tools/wallpaper.sh
+
+.PHONY: lint
+lint:
+> shellcheck install.sh bootstrap.sh bin/* hooks/pre-commit tools/*.sh
