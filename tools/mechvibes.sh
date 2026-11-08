@@ -10,7 +10,7 @@ api=https://api.github.com/repos/hainguyents13/mechvibes-dx/releases/latest
 json=$(curl -fsSL "$api")
 deb_url=$(echo "$json" | jq -r '.assets[] | select(.name | endswith("amd64.deb")) | .browser_download_url' | head -1)
 sums_url=$(echo "$json" | jq -r '.assets[] | select(.name == "SHA256SUMS.txt") | .browser_download_url' | head -1)
-[ -n "$deb_url" ] && [ -n "$sums_url" ] || { echo "Release assets not found"; exit 1; }
+if [ -z "$deb_url" ] || [ -z "$sums_url" ]; then echo "Release assets not found"; exit 1; fi
 
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
