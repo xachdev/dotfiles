@@ -2,7 +2,7 @@
 for f in bashrc gitconfig nanorc tmux.conf gitgnore_global vimrc; do
     if [ "$(readlink -f "$HOME/.$f")" = "$HOME/dotfiles/$f" ]; then
         echo "ok        .$f"
-    else:
+    else
         echo "BROKEN    .$f"
     fi
 done
