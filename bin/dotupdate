@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd ~/dotfiles
+
+echo "==dotfiles=="
+bin/dotpull
+
+echo "== apt =="
+sudo apt-get update
+sudo apt-get upgrade -y
+
+echo "== zig =="
+bash tools/zig.sh
+
+echo "== sublime-zig =="
+bash tools/sublime-zig.sh
+
+echo "== check =="
+bin/dotdoctor
+
+if [ -f /var/run/reboot-required ]; then
+echo "Reboot needed (kernel update)"
+fi

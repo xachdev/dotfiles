@@ -18,3 +18,4 @@ On a fresh machine, `~/dotfiles/bootstrap.sh` installs the packages.txt, then li
 - `dotcheck`: verify the symlinks
 - `make bootstrap`: set up a fresh machine
 - `dotdoctor`: check that tools are installed
+- `dotupdate`: update, Zig and syntax

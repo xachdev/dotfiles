@@ -43,3 +43,7 @@ lint:
 .PHONY: backup
 backup:
 > bash tools/backup.sh $(d)
+
+.PHONY: update
+update:
+> bin/dotupdate
