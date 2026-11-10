@@ -36,4 +36,5 @@ alias grep='grep --color=auto'
 
 # Machine-specific settings (not tracked)
 [ -f ~/.bashrc.local ] && source ~/.bashrc.local
-export PATH="/opt/zig:$PATH"
+export PATH="/opt/zig:$PATH"alias cls='clear'
+alias cls='clear'
