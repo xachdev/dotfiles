@@ -55,3 +55,7 @@ obsidian:
 .PHONY: obsidian-appimage
 obsidian-appimage:
 > bash tools/obsidian-appimage.sh
+
+.PHONY: obs-save
+obs-save:
+> bash tools/obs-save.sh

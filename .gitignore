@@ -5,3 +5,4 @@
 *.token
 .bash_history
 =xfce/displays.xml
+obs/basic/profiles/*/service.json
