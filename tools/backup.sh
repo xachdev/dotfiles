@@ -12,7 +12,7 @@ exit 1
 fi
 
 mkdir -p "$dest/backup"
-for src in "$HOME/Videos" "$HOME/projects"; do
+for src in "$HOME/Videos" "$HOME/projects" "$HOME/Documents/vault"; do
 if [ -d "$src" ]; then
 rsync -a --info=progress2 "$src" "$dest/backup/"
 fi
