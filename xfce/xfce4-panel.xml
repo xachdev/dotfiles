@@ -49,7 +49,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="known-players" type="string" value="Chromium;vlc"/>
+      <property name="known-players" type="string" value="Chromium;spotify;vlc"/>
     </property>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>

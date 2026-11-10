@@ -17,3 +17,4 @@ vlc
 obs-studio
 gimp
 rsync
+gnupg

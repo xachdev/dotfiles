@@ -23,3 +23,5 @@ bash tools/sublime-zig.sh
 bash tools/wallpaper.sh || true
 bash tools/obsidian-appimage.sh
 [ -d "$HOME/Documents/vault" ] || git clone git@github.com:xachdev/vault.git "$HOME/Documents/vault" || true
+bash tools/spotify.sh || true
+bash tools/rust.sh

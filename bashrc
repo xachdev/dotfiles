@@ -38,3 +38,6 @@ alias grep='grep --color=auto'
 [ -f ~/.bashrc.local ] && source ~/.bashrc.local
 export PATH="/opt/zig:$PATH"alias cls='clear'
 alias cls='clear'
+
+# Rust
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

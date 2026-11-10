@@ -58,3 +58,11 @@ obs-save:
 > bash tools/obs-save.sh
 
 
+
+.PHONY: spotify
+spotify:
+> bash tools/spotify.sh
+
+.PHONY: rust
+rust:
+> bash tools/rust.sh
