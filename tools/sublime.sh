@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+command -v wget >/dev/null || { sudo apt-get update && sudo apt-get install -y wget; }
 
 if command -v subl >/dev/null; then
   echo "Sublime Text already installed"
