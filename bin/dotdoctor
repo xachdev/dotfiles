@@ -11,8 +11,3 @@ if python3 -c 'import tkinter' 2>/dev/null; then
 else
 	echo "MISSING tkinter"
 fi
-if id -nG | grep -qw input; then
-	echo "ok	input group (Mechvibes)"
-else
-	echo "MISSING input group (Mechvibes)"
-fi

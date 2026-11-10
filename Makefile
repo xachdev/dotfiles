@@ -28,9 +28,6 @@ sublime:
 sublime-zig:
 > bash tools/sublime-zig.sh
 
-.PHONY: mechvibes
-mechvibes:
-> bash tools/mechvibes.sh
 
 .PHONY: wallpaper
 wallpaper:
@@ -59,3 +56,5 @@ obsidian-appimage:
 .PHONY: obs-save
 obs-save:
 > bash tools/obs-save.sh
+
+
