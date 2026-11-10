@@ -47,3 +47,7 @@ backup:
 .PHONY: update
 update:
 > bin/dotupdate
+
+.PHONY: obsidian
+obsidian:
+> bash tools/obsidian.sh

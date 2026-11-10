@@ -22,3 +22,4 @@ tools/zig.sh
 bash tools/sublime-zig.sh
 bash tools/mechvibes.sh
 bash tools/wallpaper.sh || true
+bash tools/obsidian.sh
