@@ -51,3 +51,7 @@ update:
 .PHONY: obsidian
 obsidian:
 > bash tools/obsidian.sh
+
+.PHONY: obsidian-appimage
+obsidian-appimage:
+> bash tools/obsidian-appimage.sh
