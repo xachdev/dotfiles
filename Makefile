@@ -66,3 +66,7 @@ spotify:
 .PHONY: rust
 rust:
 > bash tools/rust.sh
+
+.PHONY: thock
+thock:
+> bash tools/thock.sh
