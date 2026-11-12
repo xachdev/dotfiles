@@ -26,3 +26,4 @@ bash tools/obsidian-appimage.sh
 bash tools/spotify.sh || true
 bash tools/rust.sh
 bash tools/thock.sh || true
+bash tools/fonts.sh || true

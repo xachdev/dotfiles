@@ -70,3 +70,7 @@ rust:
 .PHONY: thock
 thock:
 > bash tools/thock.sh
+
+.PHONY: fonts
+fonts:
+> bash tools/fonts.sh
