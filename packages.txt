@@ -19,3 +19,7 @@ gimp
 rsync
 gnupg
 fontconfig
+fzf
+ripgrep
+bat
+fd-find

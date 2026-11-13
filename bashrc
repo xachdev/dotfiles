@@ -45,3 +45,10 @@ alias cls='clear'
 # Starship prompt
 export STARSHIP_CONFIG="$HOME/dotfiles/starship.toml"
 command -v starship >/dev/null && eval "$(starship init bash)"
+
+# Modern CLI tools
+command -v batcat >/dev/null && alias bat='batcat'
+command -v fdfind >/dev/null && alias fd='fdfind'
+if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
+  . /usr/share/doc/fzf/examples/key-bindings.bash
+fi
