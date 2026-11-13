@@ -18,3 +18,4 @@ rsync -a --info=progress2 "$src" "$dest/backup/"
 fi
 done
 echo "Backup done: $dest/backup"
+touch "$HOME/.last_backup"

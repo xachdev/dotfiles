@@ -78,3 +78,7 @@ fonts:
 .PHONEY: starship
 starship:
 > bash tools/starship.sh
+
+.PHONY: remind
+remind:
+> bin/dotremind

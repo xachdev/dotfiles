@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+msgs=()
+
+for repo in "$HOME/dotfiles" "$HOME/Documents/vault"; do
+[ -d "$repo/.git" ] || continue
+if [ -n "$(git -C "$repo" status --porcelain 2>/dev/null)" ]; then
+msgs+=("Unsaved changes: $repo")
+fi
+if git -C "$repo" status -sb 2>/dev/null | head -1 | grep -q 'ahead'; then
+msgs+=("Unpushed commits: $repo")
+fi
+done
+
+stamp="$HOME/.last_backup"
+if [ ! -f "$stamp" ] || [ -n "$(find "$stamp" -mtime +7 2>/dev/null)" ]; then
+msgs+=("No backup in over 7 days: make backup d=/media/...")
+fi
+
+for m in "${msgs[@]}"; do
+printf '\e[33m! %s\e[0m\n' "$m"
+done

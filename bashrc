@@ -52,3 +52,6 @@ command -v fdfind >/dev/null && alias fd='fdfind'
 if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
   . /usr/share/doc/fzf/examples/key-bindings.bash
 fi
+
+# Reminders on new terminal
+[[ $- == *i* ]] && command -v dotremind >/dev/null && dotremind
