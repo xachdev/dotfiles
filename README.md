@@ -19,4 +19,5 @@ On a fresh machine, `~/dotfiles/bootstrap.sh` installs the packages.txt, then li
 - `make bootstrap`: set up a fresh machine
 - `dotdoctor`: check that tools are installed
 - `dotupdate`: update, Zig and syntax
+- `newproj NAME [python|zig|rust]`: create a new project
 - `vaultsync`: commit and push the Obsidian vault

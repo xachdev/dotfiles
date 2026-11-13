@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+name="${1:-}"
+kind="${2:-python}"
+if [ -z "$name" ]; then
+  echo "Usage: newproj NAME [python|zig|rust]"
+  exit 1
+fi
+case "$kind" in
+  python|zig|rust) ;;
+  *) echo "Unknown kind: $kind"; exit 1 ;;
+esac
+
+dir="$HOME/projects/$name"
+if [ -e "$dir" ]; then
+  echo "$dir already exists"
+  exit 1
+fi
+mkdir -p "$dir"
+cd "$dir"
+
+ignore() {
+  local l
+  for l in "$@"; do
+    grep -qxF "$l" .gitignore 2>/dev/null || echo "$l" >> .gitignore
+  done
+}
+
+case "$kind" in
+  python)
+    python3 -m venv .venv
+    printf '%s\n' 'def main():' '    print("Hello")' '' '' 'if __name__ == "__main__":' '    main()' > main.py
+    ignore .venv/ __pycache__/ '*.pyc'
+    ;;
+  zig)
+    zig init
+    ignore .zig-cache/ zig-out/
+    ;;
+  rust)
+    cargo init --name "$name"
+    ignore /target
+    ;;
+esac
+
+[ -d .git ] || git init -q -b main
+[ -f README.md ] || printf '# %s\n' "$name" > README.md
+git add -A
+git commit -qm "Initial commit" || echo "Commit skipped (set git user.name and user.email)"
+echo "Created $dir"
