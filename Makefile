@@ -74,3 +74,7 @@ thock:
 .PHONY: fonts
 fonts:
 > bash tools/fonts.sh
+
+.PHONEY: starship
+starship:
+> bash tools/starship.sh

@@ -27,3 +27,4 @@ bash tools/spotify.sh || true
 bash tools/rust.sh
 bash tools/thock.sh || true
 bash tools/fonts.sh || true
+bash tools/starship.sh

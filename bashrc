@@ -41,3 +41,7 @@ alias cls='clear'
 
 # Rust
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+# Starship prompt
+export STARSHIP_CONFIG="$HOME/dotfiles/starship.toml"
+command -v starship >/dev/null && eval "$(starship init bash)"
