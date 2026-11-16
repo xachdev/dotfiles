@@ -28,3 +28,4 @@ bash tools/rust.sh
 bash tools/thock.sh || true
 bash tools/fonts.sh || true
 bash tools/starship.sh
+bash tools/node.sh

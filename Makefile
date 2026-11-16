@@ -82,3 +82,7 @@ starship:
 .PHONY: remind
 remind:
 > bin/dotremind
+
+.PHONY: node
+node:
+> bash tools/node.sh
