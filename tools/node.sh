@@ -11,5 +11,7 @@ fi
 . "$NVM_DIR/nvm.sh"
 nvm install --lts
 nvm alias default 'lts/*'
+npm install -g pnpm@latest
 node --version
 npm --version
+pnpm --version
