@@ -86,3 +86,7 @@ remind:
 .PHONY: node
 node:
 > bash tools/node.sh
+
+.PHONY: love
+love:
+> bash tools/love.sh
